@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getWeather } from '../actions';
 
 const SearchBar = props => {
-  console.log(props);
+  props.getWeather();
   return (
     <div>
       <form>
